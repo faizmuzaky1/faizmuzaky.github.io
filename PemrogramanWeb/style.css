@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.biodata {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.biodata h2 {
+    color: white;
+    background-color: #007bff;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    margin-bottom: 10px;
+}
+
+.biodata p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.tasks a {
+    color: white; 
+    text-decoration: none; 
+}
+
+
+.tasks a:hover {
+    color: #0056b3; 
+    text-decoration: underline; 
+}
+
+.tasks h2 {
+    color: white;
+    background-color: #007bff;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    margin-bottom: 10px;
+}
+
+.task {
+    color: white;
+    background-color: rgba(0, 255, 0, 0.676);
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.task h3 {
+    margin-bottom: 5px;
+}
+
+.task p {
+    font-size: 14px;
+}
