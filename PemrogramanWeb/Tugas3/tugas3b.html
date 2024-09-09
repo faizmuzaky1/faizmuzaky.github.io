@@ -1,0 +1,77 @@
+<!-- 
+ Nama         : Muhamad Faiz Muzaki
+ NPM          : 140810230044
+ Nama Program : Membuat halaman untuk mengkonversi nilai angka menjadi nilai huruf
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <!-- Styling untuk tombol dan number bar -->
+    <style>
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            margin: 5px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Kalkulator Sederhana</h2>
+    <label for="bil1">Bil 1 </label>
+    <input type="text" id="bil1" /><br />
+    
+    <label for="bil2">Bil 2</label>
+    <input type="text" id="bil2" /><br />
+    
+    <label for="hasil">Hasil</label>
+    <input type="text" id="hasil" readonly /><br />
+    
+    <button onclick="hitung('+')">+</button>
+    <button onclick="hitung('-')">-</button>
+    <button onclick="hitung('*')">x</button>
+    <button onclick="hitung('/')">/</button>
+
+    <script>
+        function hitung(operator) {
+            let bil1 = parseFloat(document.getElementById('bil1').value);
+            let bil2 = parseFloat(document.getElementById('bil2').value);
+            let hasil;
+
+            if (isNaN(bil1) || isNaN(bil2)) {
+                alert("Masukkan angka yang valid.");
+                return;
+            }
+
+            switch (operator) {
+                case '+':
+                    hasil = bil1 + bil2;
+                    break;
+                case '-':
+                    hasil = bil1 - bil2;
+                    break;
+                case '*':
+                    hasil = bil1 * bil2;
+                    break;
+                case '/':
+                    if (bil2 === 0) {
+                        alert("Pembagian dengan 0 tidak diperbolehkan.");
+                        return;
+                    }
+                    hasil = bil1 / bil2;
+                    break;
+            }
+
+            document.getElementById('hasil').value = hasil;
+        }
+    </script>
+</body>
+</html>

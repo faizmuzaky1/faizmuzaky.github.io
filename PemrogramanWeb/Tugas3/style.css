@@ -1,0 +1,61 @@
+/* 
+Nama         : Muhamad Faiz Muzaki
+NPM          : 140810230044 
+Nama Program : CSS untuk halaman mengkonversi nilai angka menjadi nilai huruf
+*/
+
+/* Gaya umum untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container untuk formulir */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Gaya untuk input nilai */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Gaya untuk tombol */
+button {
+    padding: 10px;
+    width: 100%;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Gaya tombol ketika dihover */
+button:hover {
+    background-color: #218838;
+}
+
+/* Gaya untuk hasil konversi */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
