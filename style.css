@@ -2,18 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: color(display-p3 0.47707 0.81752 0.81999);;
     padding: 20px;
 }
 
 header {
+    font-family: -apple-system, -headline;
     text-align: center;
-    background-color: #007bff;
-    color: white;
+    color: color(display-p3 0.09797 0.08931 0.54018);
     padding: 10px 0;
     margin-bottom: 20px;
 }
@@ -23,7 +25,8 @@ h1 {
 }
 
 .biodata {
-    background-color: white;
+    color: whitesmoke;
+    background-color: color(display-p3 0.09797 0.08931 0.54018);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -31,14 +34,15 @@ h1 {
 }
 
 .biodata h2 {
-    color: white;
-    background-color: #007bff;
+    font-family: -apple-system, -headline;
+    color: color(display-p3 0.47707 0.81752 0.81999);
     text-align: center;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid color(display-p3 0.47707 0.81752 0.81999);
     margin-bottom: 10px;
 }
 
 .biodata p {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -56,19 +60,18 @@ h1 {
 }
 
 .tasks h2 {
-    color: white;
-    background-color: #007bff;
+    font-family: -apple-system, -headline;
+    color: color(display-p3 0.09797 0.08931 0.54018);
     text-align: center;
-    border-bottom: 2px solid #333;
     margin-bottom: 10px;
 }
 
 .task {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: white;
-    background-color: rgba(0, 255, 0, 0.676);
+    background-color: color(display-p3 0.09797 0.08931 0.54018);
     padding: 15px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
@@ -77,5 +80,6 @@ h1 {
 }
 
 .task p {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 14px;
 }
